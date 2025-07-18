@@ -57,8 +57,8 @@ function parseGvmListOutput(output) {
     // Split the output into lines
     return output.split('\n')
                  .map(line => line.trim()) // Trim each line
-                 .filter(line => line.match(/go\d+\.\d+/)) // Filter lines matching the pattern
-                 .map(line => line.match(/go\d+\.\d+/)[0]); // Extract the version number
+                 .filter(line => line.match(/go\d+(?:\.\d+)+/)) // Filter lines matching the pattern
+                 .map(line => line.match(/go\d+(?:\.\d+)+/)[0]); // Extract the version number
 }
 
 // This method is called when your extension is deactivated
