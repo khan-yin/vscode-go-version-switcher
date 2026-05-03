@@ -1,5 +1,7 @@
 # VS Code Go Version Manager (GVM) Extension
 
+> **2026-05-03** — Fixed `gvm list` output parsing: the original regex only matched lines starting with `goX.Y`, which missed some GVM output formats. Now correctly extracts version strings like `goX.Y.Z` from any position in the line.
+
 ![Go Switcher Icon](go-switcher-icon.webp)
 
 
@@ -25,4 +27,12 @@ This Visual Studio Code extension allows users to seamlessly switch between diff
 Contributions to the extension are welcome! Please feel free to fork the repository, make changes, and create a pull request.
 
 ## Author
-Alon Nativ [@anativ](https://github.com/anativ)
+Kehan Yin [@khan-yin] (https://github.com/khan-yin)
+
+## Acknowledgments
+
+Thanks to the original [vscode-go-version-switcher](https://github.com/anativ/vscode-go-version-switcher) by Alon Nativ ([@anativ](https://github.com/anativ)).
+
+## License
+
+MIT LICENSE
