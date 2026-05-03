@@ -3,7 +3,7 @@
   "displayName": "Go Version Switcher V2",
   "description": "Switch Go Version Using Your GVM",
   "version": "1.0.0",
-  "icon": "go-switcher-icon.webp",
+  "icon": "go-switcher-icon.png",
   "publisher": "khan-yin",
   "engines": {
     "vscode": "^1.85.0"
