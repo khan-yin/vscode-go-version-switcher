@@ -2,7 +2,7 @@
 
 > **2026-05-03** — Fixed `gvm list` output parsing: the original regex only matched lines starting with `goX.Y`, which missed some GVM output formats. Now correctly extracts version strings like `goX.Y.Z` from any position in the line.
 
-![Go Switcher Icon](go-switcher-icon.webp)
+![Go Switcher Icon](go-switcher-icon.png)
 
 
 ## Overview
