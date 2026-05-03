@@ -2,15 +2,15 @@
   "name": "go-version-switcher",
   "displayName": "Go Version Switcher",
   "description": "Switch Go Version Using Your GVM",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "icon": "go-switcher-icon.webp",
-  "publisher": "alon-nativ",
+  "publisher": "khan-yin",
   "engines": {
     "vscode": "^1.85.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anativ/vscode-go-version-switcher.git"
+    "url": "https://github.com/khan-yin/vscode-go-version-switcher.git"
   },
   "categories": [
     "Other"
