@@ -2,7 +2,7 @@
   "name": "go-version-switcher-v2",
   "displayName": "Go Version Switcher V2",
   "description": "Switch Go Version Using Your GVM",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "go-switcher-icon.png",
   "publisher": "khan-yin",
   "engines": {
