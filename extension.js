@@ -3,6 +3,20 @@
 const vscode = require('vscode');
 const { exec } = require('child_process');
 const os = require('os');
+const fs = require('fs');
+
+function getBestShell() {
+	const shells = [
+		'/bin/zsh', '/usr/bin/zsh', '/usr/local/bin/zsh',
+		'/bin/bash', '/usr/bin/bash', '/usr/local/bin/bash'
+	];
+	for (const shell of shells) {
+		if (fs.existsSync(shell)) {
+			return shell;
+		}
+	}
+	return '/bin/sh';
+}
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -21,7 +35,7 @@ function activate(context) {
 	// The commandId parameter must match the command field in package.json
 	let disposable = vscode.commands.registerCommand('go-version-switcher.run', function () {
 		   // Execute gvm list
-		   exec('gvm list', (err, stdout, stderr) => {
+		   exec('gvm list', { shell: getBestShell() }, (err, stdout, stderr) => {
             if (err) {
                 vscode.window.showErrorMessage('Error listing Go versions');
                 return;
